@@ -5,7 +5,7 @@ metadata:
   labels:
     app: webapp
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: webapp
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: nanajanashia/k8s-demo-app:v1.0
+          image: minikube-webapp
           ports:
             - containerPort: 3000
           env:

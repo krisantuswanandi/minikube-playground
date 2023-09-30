@@ -1,0 +1,15 @@
+{
+  "name": "minikube-playground",
+  "version": "0.1.0",
+  "description": "Me learning about kubernetes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Krisantus Wanandi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
