@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: errimagepull-deployment
+  labels:
+    app: errimagepull
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: errimagepull
+  template:
+    metadata:
+      labels:
+        app: errimagepull
+    spec:
+      containers:
+        - name: errimagepull
+          image: errimagepull
+          ports:
+            - containerPort: 6379
